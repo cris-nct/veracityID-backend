@@ -1,14 +1,15 @@
 package exam.veracityid;
 
+import kong.unirest.Unirest;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;
 
-@SpringBootApplication(exclude = SecurityAutoConfiguration.class)
+@SpringBootApplication
 public class VeracityidApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(VeracityidApplication.class, args);
-	}
+    public static void main(String[] args) {
+        Unirest.config().addShutdownHook(true);
+        SpringApplication.run(VeracityidApplication.class, args);
+    }
 
 }

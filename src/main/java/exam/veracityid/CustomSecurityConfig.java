@@ -32,25 +32,33 @@ public class CustomSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http
+         http
                 .csrf().disable()
-                .authorizeRequests(a -> a
-                        .antMatchers("/", "/error", "/webjars/**")
-                        .permitAll()
-                        .anyRequest()
-                        .authenticated()
-                )
-                .exceptionHandling(e -> e.authenticationEntryPoint(new HttpStatusEntryPoint(HttpStatus.UNAUTHORIZED)))
-                .oauth2Login();
+                .authorizeRequests()
+                .antMatchers("/", "/index").permitAll()
+                .anyRequest().authenticated()
+                .and()
+                .httpBasic();
+
+//        http
+//                .csrf().disable()
+//                .authorizeRequests(a -> a
+//                        .antMatchers("/", "/error", "/webjars/**")
+//                        .permitAll()
+//                        .anyRequest()
+//                        .authenticated()
+//                )
+//                .exceptionHandling(e -> e.authenticationEntryPoint(new HttpStatusEntryPoint(HttpStatus.UNAUTHORIZED)))
+//                .oauth2Login();
     }
 
-//    @Override
-//    @Bean
-//    public UserDetailsService userDetailsService() {
-//        List<UserDetails> users = new ArrayList<>();
-//        users.add(new User(serverUser, serverPassword, Collections.singletonList(new SimpleGrantedAuthority("ADMIN"))));
-//        return new InMemoryUserDetailsManager(users);
-//    }
+    @Override
+    @Bean
+    public UserDetailsService userDetailsService() {
+        List<UserDetails> users = new ArrayList<>();
+        users.add(new User(serverUser, serverPassword, Collections.singletonList(new SimpleGrantedAuthority("ADMIN"))));
+        return new InMemoryUserDetailsManager(users);
+    }
 
     @Bean
     public PasswordEncoder passwordEncoder() {
