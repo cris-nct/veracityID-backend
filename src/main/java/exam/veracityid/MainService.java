@@ -43,34 +43,42 @@ public class MainService {
     }
 
     private NearPlaces getPlaces(Point2D.Double location, int heightImages) throws UnirestException {
-        HttpResponse<JsonNode> response = Unirest.get("https://maps.googleapis.com/maps/api/place/nearbysearch/json")
+        JSONObject mainJsonObj = Unirest.get("https://maps.googleapis.com/maps/api/place/nearbysearch/json")
                 .queryString("key", googleApiKey)
                 .queryString("location", String.format("%f,%f", location.x, location.y))
                 .queryString("radius", radius)
                 .queryString("components", "country:ro")
                 .asJson()
-                .ifFailure(new UnirestErrorConsumer<>("Error at getting places for location " + location.toString()));
-
-        final JSONObject mainJsonObj = response.getBody().getObject();
-        return parsePlacesList(mainJsonObj);
+                .ifFailure(new UnirestErrorConsumer<>("Error at getting places for location " + location.toString()))
+                .getBody()
+                .getObject();
+        NearPlaces places = parsePlacesList(mainJsonObj);
+        if (heightImages > 0) {
+            downloadImages(places, heightImages);
+        }
+        return places;
     }
 
     private NearPlaces getNextPlaces(String pageToken, int heightImages) {
-        HttpResponse<JsonNode> response = Unirest.get("https://maps.googleapis.com/maps/api/place/nearbysearch/json")
+        JSONObject mainJsonObj = Unirest.get("https://maps.googleapis.com/maps/api/place/nearbysearch/json")
                 .queryString("key", googleApiKey)
                 .queryString("pagetoken", pageToken)
                 .asJson()
-                .ifFailure(new UnirestErrorConsumer<>("Error at getting places on page " + pageToken));
+                .ifFailure(new UnirestErrorConsumer<>("Error at getting places on page " + pageToken))
+                .getBody()
+                .getObject();
 
-        final JSONObject mainJsonObj = response.getBody().getObject();
         NearPlaces places = parsePlacesList(mainJsonObj);
         if (heightImages > 0) {
-            for (Place place : places.getPlacesList()) {
-                final byte[] photoData = downloadPhoto(place, heightImages);
-                place.setImage(photoData);
-            }
+            downloadImages(places, heightImages);
         }
         return places;
+    }
+
+    private void downloadImages(NearPlaces places, int heightImages) {
+        places.getPlacesList().forEach(place -> {
+            place.setImage(this.downloadImage(place.getPhotoReference(), heightImages));
+        });
     }
 
     private NearPlaces parsePlacesList(JSONObject jsonObj) {
@@ -136,17 +144,17 @@ public class MainService {
         return candidates.getJSONObject(0).getString("place_id");
     }
 
-    private byte[] downloadPhoto(Place place, int height) {
+    private byte[] downloadImage(String photoReference, int height) {
         return Unirest.get("https://maps.googleapis.com/maps/api/place/photo")
                 .queryString("maxheight", height)
-                .queryString("photoreference", place.getPhotoReference())
+                .queryString("photoreference", photoReference)
                 .queryString("key", googleApiKey)
                 .asBytes()
-                .ifFailure(new UnirestErrorConsumer<>("Error at getting image " + place.getPhotoReference()))
+                .ifFailure(new UnirestErrorConsumer<>("Error at getting image " + photoReference))
                 .getBody();
     }
 
-    public void savePlaceToDB(Place place) {
+    void savePlaceToDB(Place place) {
         PlaceEntity entity = new PlaceEntity();
         entity.setName(place.getName());
         entity.setLatitude(place.getLatitude());
