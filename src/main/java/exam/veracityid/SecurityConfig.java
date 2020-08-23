@@ -3,6 +3,7 @@ package exam.veracityid;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Profile;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
@@ -20,6 +21,7 @@ import java.util.List;
 
 @Configuration
 @EnableWebSecurity
+@Profile("prod")
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Value("${server.user}")
@@ -28,6 +30,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Value("${server.password}")
     private String serverPassword;
 
+    @Profile("dev")
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
@@ -50,5 +53,15 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Bean
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
+    }
+
+    @Configuration
+    @EnableWebSecurity
+    @Profile("dev")
+    static class DisabledSecurity extends WebSecurityConfigurerAdapter {
+        @Override
+        protected void configure(HttpSecurity http) throws Exception {
+            http.csrf().disable().authorizeRequests().anyRequest().permitAll();
+        }
     }
 }
