@@ -30,7 +30,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Value("${server.password}")
     private String serverPassword;
 
-    @Profile("dev")
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
