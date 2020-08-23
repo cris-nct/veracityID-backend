@@ -2,10 +2,14 @@ package exam.veracityid;
 
 import lombok.Data;
 
+import java.io.Serializable;
+
 @Data
-class Place {
+class Place implements Serializable {
 
     private String name;
+
+    private long localityId;
 
     private double latitude;
 
@@ -15,7 +19,7 @@ class Place {
 
     private int photoHeight;
 
-    private String photoReference;
+    private String imageReference;
 
     private byte[] image;
 }

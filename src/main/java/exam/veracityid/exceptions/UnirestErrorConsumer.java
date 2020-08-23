@@ -1,4 +1,4 @@
-package exam.veracityid;
+package exam.veracityid.exceptions;
 
 import kong.unirest.HttpResponse;
 import org.slf4j.Logger;

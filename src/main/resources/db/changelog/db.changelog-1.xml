@@ -12,6 +12,9 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
                      incrementBy="1">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
+            <column  name="locality_id" type="int">
+                <constraints  nullable="false"/>
+            </column>
             <column  name="name" type="varchar(200)">
                 <constraints  nullable="false"/>
             </column>
@@ -21,8 +24,60 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
             <column  name="longitude" type="float(10)">
                 <constraints  nullable="false"/>
             </column>
-            <column  name="image" type="LONGBLOB" />
+            <column  name="image" type="blob" />
         </createTable>
+        <createIndex indexName="idx_places_id" tableName="places" unique="true">
+            <column name="id"/>
+        </createIndex>
     </changeSet>
 
+    <changeSet  id="1.1"  author="Cristian Tone">
+        <createTable tableName="localities">
+            <column  name="id" type="int"
+                     autoIncrement="true"
+                     startWith="0"
+                     incrementBy="1">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column  name="name" type="varchar(200)">
+                <constraints  nullable="false"/>
+            </column>
+            <column  name="latitude" type="float(10)">
+                <constraints  nullable="false"/>
+            </column>
+            <column  name="longitude" type="float(10)">
+                <constraints  nullable="false"/>
+            </column>
+            <column  name="google_place_id" type="varchar(100)">
+                <constraints  nullable="false"/>
+            </column>
+        </createTable>
+        <createIndex indexName="idx_localities_id" tableName="localities" unique="true">
+            <column name="id"/>
+        </createIndex>
+        <createIndex indexName="idx_localities_name" tableName="localities" unique="true">
+            <column name="name"/>
+        </createIndex>
+    </changeSet>
+
+    <changeSet  id="1.2"  author="Cristian Tone">
+        <insert tableName="localities">
+            <column name="name" value="Cluj-Napoca"/>
+            <column name="latitude" value="46.7712"/>
+            <column name="longitude" value="23.6236"/>
+            <column name="google_place_id" value="ChIJiwtskR8MSUcRixQfMxxgvAs"/>
+        </insert>
+        <insert tableName="localities">
+            <column name="name" value="Craiova"/>
+            <column name="latitude" value="44.3302"/>
+            <column name="longitude" value="23.7949"/>
+            <column name="google_place_id" value="ChIJB81tbQ7XUkcR-Zne2-ryUEY"/>
+        </insert>
+        <insert tableName="localities">
+            <column name="name" value="Sibiu"/>
+            <column name="latitude" value="45.7936"/>
+            <column name="longitude" value="24.1213"/>
+            <column name="google_place_id" value="ChIJ1Rws_YhnTEcRtJAzTiGd3jo"/>
+        </insert>
+    </changeSet>
 </databaseChangeLog>
