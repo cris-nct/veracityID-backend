@@ -1,3 +1,5 @@
+<p><strong>Start it with this argument for VM: -Dgoogle.api.key=&lt;your key from Google Places API&gt;</strong>
+</p>
 <p><strong>API call: /localities</strong>
 	<br />
 	<br />E.g. response:
