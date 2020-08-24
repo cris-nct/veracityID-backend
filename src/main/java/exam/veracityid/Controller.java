@@ -8,12 +8,14 @@ import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
+import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
 @RestController
@@ -22,19 +24,22 @@ public class Controller {
     @Autowired
     private PlacesService service;
 
-    @RequestMapping(value = "/cities", method = RequestMethod.GET)
-    public CitiesListDto getCities() {
+    @RequestMapping(value = "/localities", method = RequestMethod.GET)
+    public ResponseEntity<CitiesListDto> getCities(HttpServletResponse response) {
         final CitiesListDto dto = new CitiesListDto();
         final List<String> cities = service.getAllCities();
         dto.setCitiesList(cities);
-        return dto;
+
+        response.addHeader("Access-Control-Allow-Origin", "*");
+        return new ResponseEntity<>(dto, HttpStatus.OK);
     }
 
     @RequestMapping(value = "/nearplaces", method = RequestMethod.GET)
     @Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
-    public NearPlacesDto getNearPlaces(
+    public ResponseEntity<NearPlacesDto> getNearPlaces(
             @RequestParam(value = "locality") String locality,
-            @RequestParam(value = "clearCache", defaultValue = "false") Boolean clearCache
+            @RequestParam(value = "clearCache", defaultValue = "false") Boolean clearCache,
+            HttpServletResponse response
     ) {
         NearPlacesDto dto = new NearPlacesDto();
         try {
@@ -49,7 +54,8 @@ public class Controller {
         } catch (PlaceNotFoundException e) {
             throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Place not found", e);
         }
-        return dto;
+        response.addHeader("Access-Control-Allow-Origin", "*");
+        return new ResponseEntity<>(dto, HttpStatus.OK);
     }
 
     private PlaceDto toDto(Place place) {
