@@ -2,7 +2,7 @@
 	<br />
 	<br />E.g. response:
 	<br />{
-	<br />&nbsp; &nbsp; &nbsp; "citiesList": [
+	<br />&nbsp; &nbsp; &nbsp; "localities": [
 	<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"Cluj-Napoca",
 	<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"Craiova",
 	<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "Sibiu",
