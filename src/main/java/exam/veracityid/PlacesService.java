@@ -268,12 +268,12 @@ public class PlacesService {
     }
 
     @Transactional
-    List<String> getAllCities() {
-        final List<String> cities = new ArrayList<>();
+    List<String> getAllLocalities() {
+        final List<String> localities = new ArrayList<>();
         for (LocalityEntity locality : this.localitiesRepo.findAll()) {
-            cities.add(locality.getName());
+            localities.add(locality.getName());
         }
-        return cities;
+        return localities;
     }
 
 }

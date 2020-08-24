@@ -6,8 +6,8 @@ import java.io.Serializable;
 import java.util.List;
 
 @Data
-public class CitiesListDto implements Serializable {
+public class LocalitiesDto implements Serializable {
 
-    private List<String> citiesList;
+    private List<String> localities;
 
 }

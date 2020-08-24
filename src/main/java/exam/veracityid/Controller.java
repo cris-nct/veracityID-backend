@@ -1,6 +1,6 @@
 package exam.veracityid;
 
-import exam.veracityid.dto.CitiesListDto;
+import exam.veracityid.dto.LocalitiesDto;
 import exam.veracityid.dto.NearPlacesDto;
 import exam.veracityid.dto.PlaceDto;
 import exam.veracityid.exceptions.PlaceNotFoundException;
@@ -16,7 +16,6 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
 import javax.servlet.http.HttpServletResponse;
-import java.util.List;
 
 @RestController
 public class Controller {
@@ -25,10 +24,9 @@ public class Controller {
     private PlacesService service;
 
     @RequestMapping(value = "/localities", method = RequestMethod.GET)
-    public ResponseEntity<CitiesListDto> getCities(HttpServletResponse response) {
-        final CitiesListDto dto = new CitiesListDto();
-        final List<String> cities = service.getAllCities();
-        dto.setCitiesList(cities);
+    public ResponseEntity<LocalitiesDto> getLocalities(HttpServletResponse response) {
+        final LocalitiesDto dto = new LocalitiesDto();
+        dto.setLocalities(service.getAllLocalities());
 
         response.addHeader("Access-Control-Allow-Origin", "*");
         return new ResponseEntity<>(dto, HttpStatus.OK);
