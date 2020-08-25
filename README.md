@@ -1,4 +1,7 @@
-<p><strong>Start it with this argument for VM: -Dgoogle.api.key=&lt;your key from Google Places API&gt;</strong>
+<p>A small project for reading data from Google Places API</p>
+<p>Technologies used: <strong>Java 8, Spring Boot, JPA, Hibernate, Liquibase, MySQL, Unirest</strong></p>
+
+<p>Start it with this argument for VM: <strong>-Dgoogle.api.key=&lt;your key from Google Places API&gt;</strong>
 </p>
 <p><strong>API call: /localities</strong>
 	<br />
