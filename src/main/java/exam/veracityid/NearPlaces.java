@@ -23,7 +23,7 @@ class NearPlaces implements Serializable {
 
     private String nextPageToken;
 
-    private ReadDataFrom dataOrigin;
+    private ReadDataFromType dataOrigin;
 
     void addPlace(Place place) {
         this.placesList.add(place);

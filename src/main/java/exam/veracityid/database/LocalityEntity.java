@@ -16,7 +16,7 @@ public class LocalityEntity {
     @Column(name = "ID")
     private long id;
 
-    @Column(name = "name")
+    @Column(name = "NAME")
     private String name;
 
     @Column(name = "LATITUDE")
@@ -25,7 +25,7 @@ public class LocalityEntity {
     @Column(name = "LONGITUDE")
     private double longitude;
 
-    @Column(name = "google_place_id")
+    @Column(name = "GOOGLE_PLACE_ID")
     private String googlePlaceId;
 
 }

@@ -17,10 +17,10 @@ public class PlaceEntity {
     @Column(name = "ID")
     private long id;
 
-    @Column(name = "locality_id")
+    @Column(name = "LOCALITY_ID")
     private long localityID;
 
-    @Column(name = "name")
+    @Column(name = "NAME")
     private String name;
 
     @Column(name = "LATITUDE")

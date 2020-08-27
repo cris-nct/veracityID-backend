@@ -10,5 +10,4 @@ public interface PlacesRepository extends CrudRepository<PlaceEntity, Long> {
 
     List<PlaceEntity> findByLocalityID(long localityID);
 
-
 }

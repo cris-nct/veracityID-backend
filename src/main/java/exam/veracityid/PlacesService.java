@@ -103,7 +103,7 @@ public class PlacesService {
         places.setLatitude(localityEntity.getLatitude());
         places.setLongitude(localityEntity.getLongitude());
         places.addAll(allPlacesFound);
-        places.setDataOrigin(ReadDataFrom.DATABASE);
+        places.setDataOrigin(ReadDataFromType.DATABASE);
 
         return places;
     }
@@ -119,7 +119,7 @@ public class PlacesService {
                 .getBody()
                 .getObject();
         NearPlaces places = this.parsePlacesList(mainJsonObj);
-        places.setDataOrigin(ReadDataFrom.GOOGLE_API);
+        places.setDataOrigin(ReadDataFromType.GOOGLE_API);
         this.fetchAndSetImages(places);
         return places;
     }
@@ -267,7 +267,7 @@ public class PlacesService {
         return place;
     }
 
-    @Transactional
+    @Transactional(readOnly = true)
     List<String> getAllLocalities() {
         final List<String> localities = new ArrayList<>();
         for (LocalityEntity locality : this.localitiesRepo.findAll()) {

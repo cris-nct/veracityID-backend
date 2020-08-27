@@ -10,7 +10,7 @@
             timeToLiveSeconds="120"
             overflowToDisk="true" />
     <cache
-        name="exam.veracityid.database.PlaceEntity"
+        name="PlacesCache"
         maxElementsInMemory="100"
         eternal="false"
         timeToIdleSeconds="3"

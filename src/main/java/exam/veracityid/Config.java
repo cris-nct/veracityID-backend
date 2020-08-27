@@ -1,6 +1,9 @@
 package exam.veracityid;
 
 import liquibase.integration.spring.SpringLiquibase;
+import net.sf.ehcache.hibernate.management.api.HibernateStats;
+import org.hibernate.SessionFactory;
+import org.hibernate.stat.Statistics;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;

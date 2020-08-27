@@ -4,9 +4,8 @@ import exam.veracityid.dto.LocalitiesDto;
 import exam.veracityid.dto.NearPlacesDto;
 import exam.veracityid.dto.PlaceDto;
 import exam.veracityid.exceptions.PlaceNotFoundException;
-import org.hibernate.annotations.Cache;
-import org.hibernate.annotations.CacheConcurrencyStrategy;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,7 +17,7 @@ import org.springframework.web.server.ResponseStatusException;
 import javax.servlet.http.HttpServletResponse;
 
 @RestController
-public class Controller {
+public class PlacesController {
 
     @Autowired
     private PlacesService service;
@@ -33,7 +32,7 @@ public class Controller {
     }
 
     @RequestMapping(value = "/nearplaces", method = RequestMethod.GET)
-    @Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
+    @Cacheable(value = "PlacesCache", key = "#places")
     public ResponseEntity<NearPlacesDto> getNearPlaces(
             @RequestParam(value = "locality") String locality,
             @RequestParam(value = "clearCache", defaultValue = "false") Boolean clearCache,
@@ -46,7 +45,7 @@ public class Controller {
             }
             final NearPlaces places = service.getNearPlaces(locality);
             places.getPlacesList().stream().map(this::toDto).forEach(dto::addPlace);
-            if (places.getDataOrigin() == ReadDataFrom.GOOGLE_API) {
+            if (places.getDataOrigin() == ReadDataFromType.GOOGLE_API) {
                 this.service.savePlacesToDB(places);
             }
         } catch (PlaceNotFoundException e) {

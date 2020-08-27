@@ -15,9 +15,10 @@
         <property name="hibernate.generate_statistics">true</property>
         <property name="hibernate.cache.use_structured_entries">true</property>
         <property name="hibernate.cache.use_second_level_cache">true</property>
-        <!-- <property name="hibernate.cache.use_query_cache">true</property> -->
-        <property name="net.sf.ehcache.configurationResourceName">/ehcache.xml</property>
-        <property name="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.SingletonEhCacheRegionFactory</property>
+        <property name="hibernate.cache.use_query_cache">true</property>
+        <property name="net.sf.ehcache.configurationResourceName">ehcache.xml</property>
+        <property name="logging.level.org.hibernate.SQL">debug</property>
+        <property name="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.EhCacheRegionFactory</property>
         <mapping
                 class="com.roytuts.hibernate.second.level.ehcache.entity.Cd" />
     </session-factory>

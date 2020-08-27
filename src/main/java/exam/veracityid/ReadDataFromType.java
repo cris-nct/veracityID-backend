@@ -1,6 +1,6 @@
 package exam.veracityid;
 
-public enum ReadDataFrom {
+public enum ReadDataFromType {
     DATABASE,
     GOOGLE_API
 }
