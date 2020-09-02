@@ -1,5 +1,7 @@
-package exam.veracityid;
+package exam.veracityid.services;
 
+import exam.veracityid.ReadDataFromType;
+import exam.veracityid.Util;
 import exam.veracityid.exceptions.PlaceNotFoundException;
 import exam.veracityid.exceptions.UnirestErrorConsumer;
 import kong.unirest.HttpResponse;

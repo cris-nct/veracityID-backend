@@ -1,11 +1,11 @@
-package exam.veracityid;
+package exam.veracityid.services;
 
 import lombok.Data;
 
 import java.io.Serializable;
 
 @Data
-class Place implements Serializable {
+public class Place implements Serializable {
 
     private String name;
 

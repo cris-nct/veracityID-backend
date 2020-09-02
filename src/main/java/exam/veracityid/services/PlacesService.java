@@ -1,5 +1,6 @@
-package exam.veracityid;
+package exam.veracityid.services;
 
+import exam.veracityid.ReadDataFromType;
 import exam.veracityid.database.LocalitiesRepository;
 import exam.veracityid.database.LocalityEntity;
 import exam.veracityid.database.PlaceEntity;
@@ -66,7 +67,7 @@ public class PlacesService {
     }
 
     @Transactional
-    void savePlacesToDB(NearPlaces places) {
+    public void savePlacesToDB(NearPlaces places) {
         LocalityEntity locality = this.localitiesRepo.findByName(places.getLocality());
         if (locality == null || locality.isNotUpdatedWithDataFromGoogle()) {
             locality = this.saveLocalityToDB(places);
@@ -109,7 +110,7 @@ public class PlacesService {
     }
 
     @Transactional(readOnly = true)
-    List<String> getAllLocalities() {
+    public List<String> getAllLocalities() {
         final List<String> localities = new ArrayList<>();
         for (LocalityEntity locality : this.localitiesRepo.findAll()) {
             localities.add(locality.getName());

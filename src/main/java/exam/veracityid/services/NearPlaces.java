@@ -1,5 +1,6 @@
-package exam.veracityid;
+package exam.veracityid.services;
 
+import exam.veracityid.ReadDataFromType;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -7,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Data
-class NearPlaces implements Serializable {
+public class NearPlaces implements Serializable {
 
     private final List<Place> placesList = new ArrayList<>();
 

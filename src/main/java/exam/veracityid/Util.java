@@ -1,6 +1,5 @@
 package exam.veracityid;
 
-import net.sf.ehcache.CacheManager;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
@@ -10,7 +9,6 @@ import org.slf4j.LoggerFactory;
 
 public class Util {
     private final static Logger LOGGER = LoggerFactory.getLogger(Util.class);
-
 
     private static SessionFactory sessionFactory;
 
@@ -31,7 +29,6 @@ public class Util {
 
             ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder().applySettings(configuration.getProperties()).build();
             System.out.println("Hibernate serviceRegistry created");
-
 
 
             return configuration.buildSessionFactory(serviceRegistry);
