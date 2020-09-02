@@ -47,7 +47,7 @@ public class PlacesService {
     public NearPlaces getNearPlaces(String locality) throws PlaceNotFoundException {
         NearPlaces places;
         final LocalityEntity localityEntity = this.localitiesRepo.findByName(locality);
-        if (localityEntity == null) {
+        if (localityEntity == null || localityEntity.isNotUpdatedWithDataFromGoogle()) {
             places = this.fetchNearPlaces(locality);
         } else {
             places = this.getNearPlacesFromDB(locality);
@@ -230,7 +230,7 @@ public class PlacesService {
     @Transactional
     void savePlacesToDB(NearPlaces places) {
         LocalityEntity locality = this.localitiesRepo.findByName(places.getLocality());
-        if (locality == null) {
+        if (locality == null || locality.isNotUpdatedWithDataFromGoogle()) {
             locality = this.saveLocalityToDB(places);
         }
         final long localityId = locality.getId();
@@ -240,7 +240,10 @@ public class PlacesService {
     }
 
     private LocalityEntity saveLocalityToDB(NearPlaces places) {
-        LocalityEntity entity = new LocalityEntity();
+        LocalityEntity entity = this.localitiesRepo.findByName(places.getLocality());
+        if (entity == null) {
+            entity = new LocalityEntity();
+        }
         entity.setName(places.getLocality());
         entity.setLatitude(places.getLatitude());
         entity.setLongitude(places.getLongitude());

@@ -1,0 +1,2220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet  id="2.1"  author="Cristian Tone">
+        <insert tableName="localities">
+            <column name="name" value="Abrud"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Adjud"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Agnita"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Aiud"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Alba Iulia"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Alexandria"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Aleșd"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Amara"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Anina"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Aninoasa"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Arad"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Ardud"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Avrig"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Azuga"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Babadag"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Bacău"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Baia Mare"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Baia Sprie"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Baia de Aramă"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Baia de Arieș"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Balș"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Baraolt"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Bechet"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Beclean"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Beiuș"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Berbești"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Berești"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Bicaz"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Bistrița"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Blaj"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Bocșa"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Boldești-Scăeni"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Bolintin-Vale"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Borsec"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Borșa"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Botoșani"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Brad"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Bragadiru"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Brașov"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Breaza"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Brezoi"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Broșteni"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Brăila"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Bucecea"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Budești"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Buftea"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Buhuși"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Bumbești-Jiu"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Buziaș"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Buzău"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Bușteni"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Bârlad"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Băbeni"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Băicoi"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Băile Govora"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Băile Herculane"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Băile Olănești"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Băile Tușnad"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Băilești"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Bălan"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Bălcești"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Cajvana"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Calafat"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Caracal"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Caransebeș"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Carei"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Cavnic"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Cehu Silvaniei"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Cernavodă"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Chitila"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Chișineu-Criș"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Ciacova"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Cisnădie"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Cluj-Napoca"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Codlea"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Comarnic"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Comănești"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Constanța"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Copșa Mică"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Corabia"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Costești"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Covasna"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Craiova"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Cristuru Secuiesc"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Cugir"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Curtea de Argeș"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Curtici"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Câmpeni"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Câmpia Turzii"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Câmpina"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Câmpulung"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Câmpulung Moldovenesc"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Călan"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Călimănești"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Călărași"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Căzănești"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Darabani"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Dej"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Deta"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Deva"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Dolhasca"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Dorohoi"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Dragomirești"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Drobeta-Turnu Severin"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Drăgănești-Olt"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Drăgășani"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Dumbrăveni"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Dăbuleni"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Dărmănești"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Eforie"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Fetești"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Fieni"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Fierbinți-Târg"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Filiași"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Flămânzi"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Focșani"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Frasin"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Fundulea"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Făget"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Făgăraș"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Fălticeni"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Făurei"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Galați"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Geoagiu"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Gheorgheni"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Gherla"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Ghimbav"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Giurgiu"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Gura Humorului"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Găești"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Gătaia"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Hațeg"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Horezu"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Huedin"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Hunedoara"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Huși"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Hârlău"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Hârșova"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Ianca"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Iași"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Iernut"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Ineu"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Isaccea"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Jibou"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Jimbolia"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Lehliu Gară"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Lipova"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Liteni"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Livada"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Luduș"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Lugoj"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Lupeni"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Mangalia"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Marghita"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Medgidia"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Mediaș"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Miercurea Ciuc"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Miercurea Nirajului"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Miercurea Sibiului"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Mihăilești"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Milișăuți"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Mioveni"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Mizil"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Moinești"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Moldova Nouă"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Moreni"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Motru"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Murfatlar"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Murgeni"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Măcin"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Măgurele"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Mărășești"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Negrești"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Negrești-Oaș"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Negru Vodă"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Nehoiu"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Novaci"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Nucet"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Nădlac"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Năsăud"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Năvodari"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Ocna Mureș"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Ocna Sibiului"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Ocnele Mari"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Odobești"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Odorheiu Secuiesc"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Oltenița"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Onești"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Oradea"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Oravița"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Orăștie"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Orșova"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Otopeni"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Ovidiu"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Oțelu Roșu"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Panciu"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Pantelimon"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Pașcani"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Pecica"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Petrila"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Petroșani"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Piatra Neamț"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Piatra-Olt"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Pitești"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Ploiești"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Plopeni"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Podu Iloaiei"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Pogoanele"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Popești-Leordeni"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Potcoava"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Predeal"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Pucioasa"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Pâncota"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Pătârlagele"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Recaș"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Reghin"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Reșița"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Roman"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Rovinari"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Roznov"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Roșiorii de Vede"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Rupea"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Râmnicu Sărat"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Râmnicu Vâlcea"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Râșnov"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Răcari"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Rădăuți"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Salcea"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Salonta"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Satu Mare"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Scornicești"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Sebeș"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Sebiș"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Segarcea"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Seini"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Sfântu Gheorghe"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Sibiu"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Sighetu Marmației"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Sighișoara"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Simeria"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Sinaia"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Siret"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Slatina"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Slobozia"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Slănic"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Slănic Moldova"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Solca"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Sovata"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Strehaia"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Suceava"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Sulina"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Sângeorgiu de Pădure"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Sângeorz-Băi"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Sânnicolau Mare"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Sântana"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Săcele"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Săcueni"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Săliște"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Săliștea de Sus"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Sărmașu"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Săveni"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Techirghiol"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Tecuci"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Teiuș"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Timișoara"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Tismana"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Titu"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Toplița"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Topoloveni"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Tulcea"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Turda"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Turnu Măgurele"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Târgoviște"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Târgu Bujor"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Târgu Cărbunești"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Târgu Frumos"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Târgu Jiu"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Târgu Lăpuș"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Târgu Mureș"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Târgu Neamț"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Târgu Ocna"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Târgu Secuiesc"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Târnăveni"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Tălmaciu"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Tăuții-Măgherăuș"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Tășnad"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Ulmeni"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Ungheni"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Uricani"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Urlați"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Urziceni"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Valea lui Mihai"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Vaslui"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Vatra Dornei"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Vașcău"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Vicovu de Sus"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Victoria"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Videle"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Vișeu de Sus"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Vlăhița"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Voluntari"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Vulcan"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Vânju Mare"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Vălenii de Munte"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Zalău"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Zimnicea"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Zlatna"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Zărnești"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Însurăței"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Întorsura Buzăului"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Șimleu Silvaniei"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Șomcuta Mare"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Ștefănești"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Ștei"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Țicleni"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+
+        <insert tableName="localities">
+            <column name="name" value="Țăndărei"/>
+            <column name="latitude" value="0"/>
+            <column name="longitude" value="0"/>
+            <column name="google_place_id" value="null"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>

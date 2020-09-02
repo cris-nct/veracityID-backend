@@ -1,6 +1,7 @@
 package exam.veracityid.database;
 
 import lombok.Data;
+import org.apache.logging.log4j.util.Strings;
 import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
 
@@ -28,4 +29,10 @@ public class LocalityEntity {
     @Column(name = "GOOGLE_PLACE_ID")
     private String googlePlaceId;
 
+    /**
+     * @return Returns true if this entity was not updated with data from Google Places API
+     */
+    public boolean isNotUpdatedWithDataFromGoogle() {
+        return Strings.isEmpty(googlePlaceId) && latitude == 0 && longitude == 0;
+    }
 }
